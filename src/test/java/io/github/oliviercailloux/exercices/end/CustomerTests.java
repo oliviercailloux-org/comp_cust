@@ -29,11 +29,11 @@ public class CustomerTests {
 
 		assertEquals(5, allOrders.size());
 		final Iterator<Order> it = allOrders.iterator();
-		final Order o1 = it.next();
-		final Order o2 = it.next();
+		it.next();
+		it.next();
 		final Order o3 = it.next();
-		final Order o4 = it.next();
-		final Order o5 = it.next();
+		it.next();
+		it.next();
 		assertFalse(it.hasNext());
 		assertEquals(2, o3.nbSimpleOrders());
 		assertEquals(2, o3.simpleOrders().size());
