@@ -43,10 +43,11 @@ public class Customer {
 	}
 
 	/**
-	 * Returns a new customer initialized with the orders found in the given source.
+	 * Returns a new customer initialized with the orders found in the given source
+	 * and time {@link Instant#now()}.
 	 *
 	 * @return a customer
-	 * @see #readOrders()
+	 * @see #readOrders(Path)
 	 */
 	public static Customer usingOrders(Path source) {
 		/* TODO */
