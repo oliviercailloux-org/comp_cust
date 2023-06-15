@@ -1,9 +1,9 @@
 package io.github.oliviercailloux.exercices.end;
 
+import java.io.IOException;
 import java.nio.file.Path;
 import java.time.Instant;
 import java.util.List;
-import java.util.MissingResourceException;
 import java.util.Set;
 
 /**
@@ -15,32 +15,19 @@ public class Customer {
 	public static final Instant EARLIEST = Instant.parse("1960-01-01T00:00:00.00Z");
 
 	/**
-	 * Retrives the path to the “saved.txt” resource.
+	 * Reads the list of orders found in the given path. The source must contain one
+	 * word per (non-empty) line. Each line represents an order. Empty lines are
+	 * allowed and should be skipped.
 	 *
-	 * @return a valid path
-	 * @throws MissingResourceException iff the saved.txt resource is missing
-	 * @see #readSavedOrders()
-	 */
-	public static Path savedOrdersPath() {
-		/* TODO */
-		return null;
-	}
-
-	/**
-	 * Reads the list of orders found in the resource whose name, <em>relative to
-	 * this class</em>, is “saved.txt”. The resource must contain one word per
-	 * (non-empty) line. Each line represents an order. Empty lines are allowed and
-	 * should be skipped.
-	 *
+	 * @param source the source to read from
 	 * @return a (possibly empty) list of simple orders
-	 * @throws IllegalStateException    iff the resource contains other lines than
-	 *                                  single words (as determined by the space
-	 *                                  character) or empty lines (lines containing
-	 *                                  nothing else than a newline character,
-	 *                                  ‘\n‘).
-	 * @throws MissingResourceException iff the saved.txt resource is missing
+	 * @throws IllegalStateException iff the source contains other lines than single
+	 *                               words (as determined by the space character) or
+	 *                               empty lines (lines containing nothing else than
+	 *                               a newline character, ‘\n‘).
+	 * @throws IOException           iff reading from the given source fails
 	 */
-	public static List<String> readSavedOrders() {
+	public static List<String> readOrders(Path source) throws IOException {
 		/* TODO */
 		return null;
 	}
@@ -56,12 +43,12 @@ public class Customer {
 	}
 
 	/**
-	 * Returns a new customer initialized with the “saved” orders.
+	 * Returns a new customer initialized with the orders found in the given source.
 	 *
 	 * @return a customer
-	 * @see #readSavedOrders()
+	 * @see #readOrders()
 	 */
-	public static Customer usingSavedOrders() {
+	public static Customer usingOrders(Path source) {
 		/* TODO */
 		return null;
 	}
