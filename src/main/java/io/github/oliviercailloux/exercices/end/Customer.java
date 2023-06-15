@@ -17,7 +17,7 @@ public class Customer {
 	/**
 	 * Reads the list of orders found in the given path. The source must contain one
 	 * word per (non-empty) line. Each line represents an order. Empty lines are
-	 * allowed and should be skipped.
+	 * allowed and should be skipped. The source is supposed to be encoded in UTF-8.
 	 *
 	 * @param source the source to read from
 	 * @return a (possibly empty) list of simple orders
