@@ -1,4 +1,4 @@
-package io.github.oliviercailloux.exercices.end;
+package io.github.oliviercailloux.exercices.computer;
 
 /**
  * A simple computer that is able to store two operands, then apply operations

@@ -1,4 +1,4 @@
-package io.github.oliviercailloux.exercices.end;
+package io.github.oliviercailloux.exercices.customer;
 
 import java.time.Instant;
 import java.util.List;

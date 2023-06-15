@@ -1,9 +1,11 @@
-package io.github.oliviercailloux.exercices.end;
+package io.github.oliviercailloux.exercices.customer;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import io.github.oliviercailloux.exercices.customer.Customer;
+import io.github.oliviercailloux.exercices.customer.Order;
 import java.time.Instant;
 import java.util.Iterator;
 import java.util.Set;

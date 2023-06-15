@@ -1,8 +1,9 @@
-package io.github.oliviercailloux.exercices.end;
+package io.github.oliviercailloux.exercices.computer;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import io.github.oliviercailloux.exercices.computer.Computer;
 import org.junit.jupiter.api.Test;
 
 public class ComputerTests {

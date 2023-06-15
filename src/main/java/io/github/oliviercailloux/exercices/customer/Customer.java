@@ -1,4 +1,4 @@
-package io.github.oliviercailloux.exercices.end;
+package io.github.oliviercailloux.exercices.customer;
 
 import java.io.IOException;
 import java.nio.file.Path;
