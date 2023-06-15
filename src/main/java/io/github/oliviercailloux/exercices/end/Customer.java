@@ -49,7 +49,7 @@ public class Customer {
 	 * @return a customer
 	 * @see #readOrders(Path)
 	 */
-	public static Customer usingOrders(Path source) {
+	public static Customer usingOrders(Path source) throws IOException {
 		/* TODO */
 		return null;
 	}
